@@ -588,6 +588,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-groq" },
     { name = "python-dotenv" },
+    { name = "requests" },
     { name = "wikipedia" },
 ]
 
@@ -597,6 +598,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.3.26" },
     { name = "langchain-groq", specifier = ">=0.3.4" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
+    { name = "requests", specifier = ">=2.32.4" },
     { name = "wikipedia", specifier = ">=1.4.0" },
 ]
 

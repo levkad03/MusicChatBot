@@ -10,3 +10,7 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "wikipedia>=1.4.0",
 ]
+
+[tool.ruff]
+select = ["E", "F", "I"]
+ignore = ["F401", "F841", "F403", "F405"]

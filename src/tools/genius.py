@@ -1,12 +1,12 @@
 import requests
 from langchain.tools import BaseTool
 
-from config import GENIUS_API_KEY
+from src.config import GENIUS_API_KEY
 
 
 class GeniusLyricsTool(BaseTool):
-    name = "GeniusLyrics"
-    description = "Use this to fetch songs lyrics from Genius"
+    name: str = "GeniusLyrics"
+    description: str = "Use this to fetch songs lyrics from Genius"
 
     def _run(self, query: str) -> str:
         headers = {"Authorization": f"Bearer {GENIUS_API_KEY}"}

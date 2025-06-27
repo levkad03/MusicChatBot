@@ -2,9 +2,9 @@ from langchain.agents import Tool, initialize_agent
 from langchain.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 
-from config import GROQ_API_KEY
-from tools.genius import GeniusLyricsTool
-from tools.wikipedia import get_wikipedia_tool
+from src.config import GROQ_API_KEY
+from src.tools.genius import GeniusLyricsTool
+from src.tools.wikipedia import get_wikipedia_tool
 
 llm = ChatGroq(api_key=GROQ_API_KEY, model="llama-3.1-8b-instant", temperature=0)
 
